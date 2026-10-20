@@ -1,0 +1,25 @@
+{
+  "name": "blockchain-evoting-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Beginner-friendly local blockchain e-voting mini-project",
+  "scripts": {
+    "chain": "hardhat node",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "check": "npm run compile && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.17",
+    "vite": "^6.0.7"
+  },
+  "dependencies": {
+    "ethers": "^6.13.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
